@@ -1,4 +1,4 @@
-# iptv-store-app
+# iptv-store-appa
 
 ## Project setup
 ```
