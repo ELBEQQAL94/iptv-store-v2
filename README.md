@@ -1,5 +1,4 @@
-# iptv-store-appa
-
+# iptv-store-appb
 
 ## Project setup
 ```
