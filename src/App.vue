@@ -1,57 +1,42 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="#000000"
-      dark
-    >
-      <div class="d-flex align-center">
-        <Tv />
-        <!-- <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-          hidden-sm-and-down
-        /> -->
-        <h1 class="hidden-sm-and-down">IPTV SMART</h1>
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        ref="button"
-        @click="$vuetify.goTo('#accueil')"
-        text
-      >
-        <span class="mr-2">Accueil</span>
-      </v-btn>
-      <v-btn
-        ref="button"
-        @click="$vuetify.goTo('#nos-offres')"
-        text
-      >
-        <span class="mr-2">Nos Offres</span>
-      </v-btn>
-    </v-app-bar>
-
+    <app-nav />
     <v-content>
-      <div id="accueil" style="width:100vw; height:100vh; background-color:blue;">Accueil</div>
-      <div id="nos-offres" style="width:100vw; height:100vh; background-color:red;">Nos Offres</div>
+      <Carousel />
+      <a
+        class="float"
+        title="whatssap"
+        :href="whatssapUrl"
+        target="_blank"
+      >
+        <Whatssap />
+      </a>
+      <Parallax />
+      <Prices />
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Tv from '@/components/icons/Tv.vue';
+import AppNav from '@/components/layouts/AppNav.vue';
+import Carousel from '@/components/main/Carousel.vue';
+import Parallax from '@/components/main/Parallax.vue';
+import Prices from '@/components/main/Prices.vue';
+import Whatssap from '@/components/icons/Whatssap.vue';
 
 export default {
   name: 'App',
-
   components: {
-    Tv,
+    AppNav,
+    Carousel,
+    Parallax,
+    Prices,
+    Whatssap,
+  },
+  data() {
+    return {
+      whatssapUrl: 'https://api.whatsapp.com/send?phone=2120648488032&text=je%20suis%20int%C3%A9ress%C3%A9%20Par%20Votre%20offre%20Iptv&source=&data=&app_absent=',
+    };
   },
 };
 </script>

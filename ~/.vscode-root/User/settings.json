@@ -1,0 +1,6 @@
+{
+    "todo-tree.tree.showScanModeButton": false,
+    "editor.fontSize": 20,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}

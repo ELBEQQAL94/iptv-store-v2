@@ -1,31 +1,32 @@
 <template>
-  <v-app-bar
-      app
-      color="#000000"
-      dark
-    >
-      <div class="d-flex align-center">
+<header>
+  <v-container>
+    <v-toolbar dark flat>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-toolbar-title>
         <Tv />
-        <h1 class="hidden-sm-and-down">IPTV SMART</h1>
-      </div>
+      </v-toolbar-title>
+      <v-btn ref="button" @click="$vuetify.goTo('#accueil')" text>
+        <v-toolbar-title>IPTV SMART</v-toolbar-title>
+      </v-btn>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        ref="button"
-        @click="$vuetify.goTo('#accueil')"
-        text
-      >
-        <span class="mr-2">Accueil</span>
+      <v-btn ref="button" @click="$vuetify.goTo('#accueil')" text>
+        <span class="mr-2">accueil</span>
       </v-btn>
-      <v-btn
-        ref="button"
-        @click="$vuetify.goTo('#nos-offres')"
-        text
-      >
-        <span class="mr-2">Nos Offres</span>
+      <v-btn ref="button" @click="$vuetify.goTo('#applications')" text>
+        <span class="mr-2">applications</span>
       </v-btn>
-    </v-app-bar>
+       <v-btn ref="button" @click="$vuetify.goTo('#prices')" text>
+        <span class="mr-2">prix</span>
+      </v-btn>
+      <v-btn ref="button" @click="$vuetify.goTo('#nos-offres')" text>
+        <span class="mr-2">nos offres</span>
+      </v-btn>
+    </v-toolbar>
+  </v-container>
+</header>
 </template>
 
 <script>

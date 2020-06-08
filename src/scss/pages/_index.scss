@@ -1,0 +1,63 @@
+.line-through {
+  text-decoration: line-through;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Accueil Section */
+.v-btn {
+        background-color: $second-color;
+}
+
+.main-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/* hero block */
+.v-carousel {
+    height: 100%;
+    width: 100%;
+}
+
+.heroBlock {
+    position: relative;
+  
+    .v-window {
+      @media only screen and (max-width: 599px) {
+        height: 220px !important;
+      }
+    }
+  
+    .v-image__image {
+        max-width: 100%;
+      &:before {
+        content: '';
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+    }
+  
+}

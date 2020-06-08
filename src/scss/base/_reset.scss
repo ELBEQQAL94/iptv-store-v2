@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+  
+* {
+    max-height: 1000000px;
+    margin: 0;
+    padding: 0;
+}
+  
+  body {
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

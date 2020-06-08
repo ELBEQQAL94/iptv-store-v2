@@ -1,0 +1,60 @@
+/* Main Variables */
+:root {
+    --main-color: rgb(243, 127, 73);
+    --second-color: rgb(247, 83, 7);
+    --white-color: #ffffff;
+    --red-color: #e50914;
+}
+/* Main Variables */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 14785px;
+}
+
+/* Main Classes */
+
+.text__center {
+    text-align: center !important;
+}
+
+/* Main Classes */
+
+/* Conatinair */
+#container {
+    max-width: 100%;
+}
+/* Container */
+
+/* Main Colors */
+/* Main Colors */
+
+/* Main Background Colors */
+
+.bg__red--color {
+    background-color: var(--red-color) !important;
+}
+
+.bg__main--color {
+    background-color:var(--main-color);
+}
+
+.bg__second--color {
+    background-color:var(--second-color);
+}
+
+/* Main Background Colors */
+
+/* Main Section */
+.main {
+    width: 100vw;
+    height: 100vh;
+    padding: 7px 15px;
+}
+
+/* Main Section */
